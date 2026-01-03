@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Vũ Thị Tho </title>
+    <style>
+        /* ----------- ĐỊNH DẠNG CHUNG ----------- */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: antiquewhite;
+            background-position: center;
+            color: #0066cc;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+            font-size: 40px;
+        }
+        
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        
+        header h1 {
+            margin-top: 10px;
+            font-size: 28px;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            color: rgb(67, 73, 42);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            font-style: oblique;
+        }
+        /* ----------- MENU NAV ----------- */
+        
+        nav {
+            background-color: #0066cc;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            display: inline;
+        }
+        
+        nav a:hover {
+            background-color: yellow;
+            transition: 0.3s;
+        }
+        /* ----------- MAIN ----------- */
+        
+        main {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        section.left {
+            width: 35%;
+            padding: 20px;
+            background-color: #e6f0ff;
+            border-right: 2px solid #ccc;
+        }
+        
+        section.right {
+            width: 65%;
+            padding: 20px;
+        }
+        
+        section.left h2,
+        section.right h2 {
+            color: #004080;
+        }
+        /* ----------- FOOTER ----------- */
+        
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            font-style: italic;
+            padding: 15px 0;
+        }
+        /* ----------- LIÊN KẾT & HIỆU ỨNG ----------- */
+        
+        a {
+            color: #004080;
+        }
+        
+        a:hover {
+            color: #cc0000;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <img src="F:\THIETKEWEBCD24CNTT2\HINHANH\lop2.jpg" alt="Ảnh cá nhân">
+        <h1>Trang cá nhân -Vũ Thị Tho </h1>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+            <a href="https://zalo.me/0912337075">💬 Zalo</a>
+            <a href="#">🔍 Tìm kiếm</a>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <a href="#gioithieu" onclick="showContent('gioithieu')">Giới thiệu</a>
+        <a href="#sothich" onclick="showContent('sothich')">Sở thích</a>
+        <a href="https://bctech.edu.vn" target="_blank">Trường học</a>
+        <a href="F:\THIETKEWEBCD24CNTT2\HTML\form\form dangky.html" target="_blank">Đăng ký học</a>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <section class="left">
+            <h2>Thông tin cá nhân</h2>
+            <p><b>Họ tên:</b> Vũ Thị Tho </p>
+            <p><b>Ngày sinh:</b> 01/01/2000</p>
+            <p><b>Email:</b> thovt@bctech.edu.vn</p>
+            <p><b>Điện thoại:</b> 0912337075</p>
+
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: đường 3/2 Vũng tàu, Việt nam</p>
+            <p>Facebook: fb.com/vuthitho</p>
+        </section>
+
+        <section class="right" id="content">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào! Tôi Vũ Thị Tho, sinh viên ngành Công nghệ Thông tin. Tôi yêu thích lập trình web, thích khám phá công nghệ mới và mong muốn trở thành một lập trình viên chuyên nghiệp.</p>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        &copy; 2025 - Thiết kế bởi HSSV: Vũ Thị Tho - Trường : Cao đẳng Kỹ thuật Công nghệ BRVT | Môn: Thiết kế Web
+    </footer>
+
+    <!-- ===== SCRIPT ĐỔI NỘI DUNG ===== -->
+    <script>
+        function showContent(page) {
+            const content = document.getElementById("content");
+            if (page == "gioithieu") {
+                content.innerHTML = `
+                        <h2>Giới thiệu bản thân</h2>
+                        <p>Tôi Vũ Thị Tho  sinh viên ngành Công nghệ Thông tin tại Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu. 
+                        Tôi yêu thích lập trình, thiết kế website, và học hỏi công nghệ mới.</p>
+                    `;
+            } else if (page === "sothich") {
+                content.innerHTML = `
+                        <h2>Sở thích cá nhân</h2>
+                        <ul>
+                            <li>💻 Lập trình - Quản trị mạng </li>
+                            <li>🎵 Nghe nhạc</li>
+                            <li>📸 Chụp ảnh</li>
+                            <li>🚴‍♂️ Du lịch</li>
+                        </ul>
+                    `;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
