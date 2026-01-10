@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="C:\Users\Administrator\Desktop\Slide TK Web 2024\THIETKEWEBCD24CNTT2\BAIGIANG\JQUERY\jquery-3.7.1.min.js"></script>
+
+    <title>Form đăng ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .khungtong {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            background: #1e73be;
+            color: #fff;
+            padding: 10px;
+            margin: 0 -20px 20px -20px;
+            border-radius: 6px 6px 0 0;
+            font-size: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            flex: 1 0 200px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            min-width: 70%;
+            ;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="khungtong">
+
+        <!-- THÔNG TIN CÁ NHÂN -->
+        <h2>I. THÔNG TIN CÁ NHÂN</h2>
+        <div class="form-group">
+            <label>Họ tên *</label>
+            <input type="text" id="hoten" placeholder="Nhập họ và tên">
+        </div>
+
+        <div class="form-group">
+            <label>Ngày sinh *</label>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label>Giới tính *</label>
+            <select>
+                <option name="gioitinh" value="0">Nam</option>
+                <option name"gioitinh" value="1">Nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Trình độ văn hóa *</label>
+            <select>
+                <option>THCS</option>
+                <option>THPT</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Điện thoại học sinh *</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Điện thoại phụ huynh</label>
+            <input type="text">
+        </div>
+        <!-- THÔNG TIN ĐĂNG KÝ HỌC -->
+        <h2>II. THÔNG TIN ĐĂNG KÝ HỌC</h2>
+
+        <div class="form-group">
+            <label> NGÀNH HỌC</label>
+            <select>
+                <option>Công nghệ thông tin</option>
+                <option>Thiết kế đồ họa</option>
+                <option>Logistic</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Trình độ</label>
+            <select>
+                <option>Trung cấp</option>
+                <option>Cao đẳng</option>
+            </select>
+        </div>
+
+        <button id="kiemtra">ĐĂNG KÝ</button>
+    </div>
+    <script>
+$(document).ready(function(){
+
+    $("frmDangky")
+
+
+
+
+
+
+});
+   
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

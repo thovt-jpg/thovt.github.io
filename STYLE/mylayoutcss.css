@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*--định nghĩ chung cho toàn trang--*/
+
+
+body {
+    background-color: White;
+    background-attachment: fixed;
+	margin:0px;
+	  font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+	text-transform:uppercase;
+  
+    font-size: 14px;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: yellow;
+}
+
+h1,
+h2,
+h3 {
+    color: Red;
+    padding: 2px;  
+}
+
+
+/*--định nghĩa css cho các vùng của layout-*/
+
+#khungtong{
+    margin: 0px auto;
+    width: 950px;
+    border: 1px dotted blue;
+	padding:0px;
+	
+}
+
+#top {
+    height: 150px;
+    background-color: #099;
+    position: relative;
+    border-bottom: 1px dotted blue;
+}
+
+#top>.logo1 {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+   top: 20px;
+    left: 30px;
+}
+
+#top>.logo2 {
+     top: 20px;
+   left:200px;
+    position: absolute;
+}
+
+#top>.logo3 {
+      top: 110px;
+    right: 30px;
+    position: absolute;
+}
+
+#top>.logo4 {
+    
+    right: 80px;
+    top: 110px;
+    position: absolute;
+}
+
+ #middle{ display: flex;
+  clear:both; <!---Muốn 2 div nằm ngang → dùng display: flex cho thẻ cha --->
+  margin:0px;
+			}
+			
+
+#menu-trai {
+    width: 250px;
+     background-color: #9FF;
+    border-right: 1px dotted blue;
+}
+
+#middle-center {
+      background-color: #FFC;
+	 flex: 1; <!--chiếm toàn bộ phần còn lại độ rộng-->
+
+}
+
+#bottom {
+
+   background: linear-gradient(90deg, #003, #096);
+    color: white;
+    text-align: center;
+	height:50px;
+
+	
+}
+	
+
+/*--định nghĩa ul, li trong #menu ngang--*/
+  nav {
+          
+            height: 40px;        
+            padding: 10px;
+              background: linear-gradient(90deg, #003, #096);
+            border: 1px red dotted;
+            border-radius: 5px;
+        }
+        
+        .menu {
+            list-style: none;
+            padding-top: 0px;
+            margin: 0px;
+            
+         
+        }
+        
+        .menu>li {
+            display: inline;
+            padding: 10px;
+            float: left;
+            position: relative;
+            text-align: left;
+        }
+        
+        .menu>li>a {
+			display:block;
+      
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .menu>li>a:hover {
+            color: yellow;
+            font-weight: bolder;
+            text-decoration: double rgb(49, 111, 64); 
+			background: rgba(209, 238, 22, 0.597);
+        }
+        
+        .menu>li:hover>.menucon {
+            display: block;
+        }
+       
+        .menucon {
+                 display: none;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            box-shadow: 0 10px 15px rgba(255, 0, 0, 0.15);
+			background:blue;
+            border-radius: 5px;
+            overflow: hidden;
+            min-width: 150px;
+			z-index:1;
+        }
+        
+        .menucon>li>a {
+              display: block;
+            padding-top: 20px;
+           color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+            border-bottom: 2px grey solid;
+        }        
+        .menucon>li>a:hover {
+             background: brown;
+            color: yellow;
+            text-decoration: double red;
+        }
+
+
+/*--định nghĩa legend, fieldset, ul, li trong #menu-trai--*/
+
+#menu-trai fieldset {
+    margin: 10px 5px 10px 5px;
+    border: 1px dotted red;
+    padding-bottom: 10px;
+    min-height: 100px;
+
+}
+
+#menu-trai legend {
+    padding: 5px 20px 5px 20px;
+    border: 1px dotted red;
+    font-weight: bold;
+    color: red;
+}
+
+#menu-trai ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: inside;
+    list-style-type: square;
+}
+
+#menu-trai ul li {
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px dotted blue;
+}
+
+#menu-trai li:hover {
+    background-color: yellow;
+    border-bottom: medium double red;
+}

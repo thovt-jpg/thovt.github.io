@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Untitled Document</title>
+    <!-- TemplateEndEditable -->
+    <link rel="stylesheet" type="text/css" href="../STYLE/mylayoutcss.css">
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+</head>
+<body>
+    <div id="container">
+        <!--phần header trang-->
+        <div id="top">
+          
+            <img class="logo1" src="../IMAGES/logobctech.PNG">
+              <img class="logo2" src="../IMAGES/cdktcn.PNG">
+            <img class="logo3" src="../IMAGES/Button-TimKiem.png">
+            <img class="logo4" src="../IMAGES/Text-TimKiem.png">
+        </div>
+        <!--phần menu đầu trang -->
+          <nav >
+        <ul class="menu">
+            <li> <a href=""> Trang chủ</a>
+                <ul class="menucon">
+                    <li> <a href=""> Giới thiệu trường</a></li>
+                    <li> <a href=""> Giới thiệu khoa</a></li>
+                    <li> <a href=""> Nghành nghề đào tạo</a></li>
+                </ul>
+
+            </li>
+            <li> <a href=""> Tuyển sinh</a>
+                <ul class="menucon">
+                    <li> <a href=""> Cách ngành nghề đào tạo</a></li>
+                    <li> <a href=""> Trình độ</a></li>
+                    <li> <a href="">Liên thông </a></li>
+                </ul>
+            </li>
+            <li> <a href=""> Sinh viên </a>
+                <ul class="menucon">
+                    <li> <a href=""> Thời khóa biểu</a></li>
+                    <li> <a href=""> Kết quả học tập</a></li>
+                    <li> <a href=""> Ký túc xá</a></li>
+                </ul>
+
+
+
+            </li>
+            <li> <a href=""> Đăng ký học</a>
+                <ul class="menucon">
+                    <li> <a href=""> Đăng nhập</a></li>
+                    <li> <a href=""> Đăng ký nhập học </a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+        <!--phần giữa trang-->
+        <div id="middle">
+          <div id="menu-trai">
+                <fieldset>
+                    <legend>Đăng ký</legend>
+                    <ul>
+                        <li><a href="../trangso1.html"> Đăng nhập </a></li>
+                        <li><a href="../FormDangkyhoc.html">">Đăng ký nhập học</a></li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Giới thiệu Ngành nghề</legend>
+                    <ul>
+                        <li><a href="../trangso1.html">Công nghệ thông tin</a></li>
+                        <li><a href="../trangso2.html">Thiết kế đồ họa</a></li>
+                        <li><a href="../trangso3.html">Mạng máy tính</a></li>
+                        <li><a href="../trangso4.html">Điện Công nghiệp </a></li>
+                        <li><a href="http://www.bctech.edu.vn">Liên hệ </a></li>
+                      
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Liên thông</legend>
+                       <ul>
+                        <li><a href="../trangso1.html"> ĐH Sư phạm kỹ thuật </a></li>
+                        <li><a href="../trangso2.html">ĐH Giao thông vận tải</a></li>
+                  </ul>
+                </fieldset>
+            </div>
+          
+            <!-- TemplateBeginEditable name="noidungthaydoi" -->noidungthaydoi<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="noidung" -->
+            <div id="middle-center">
+              <h1 data-fontsize="26" data-lineheight="31.2px">TỔNG QUAN NỘI DUNG THAY DỔI</h1>
+              <p><strong>Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa – Vũng Tàu</strong> (BCTech) được thành lập năm 1998 là trường công lập trực thuộc Ủy ban nhân dân Thành phố Hồ Chí Minh, trước đây là Trường Cao đẳng nghề tỉnh Bà Rịa – Vũng Tàu.</p>
+              <p>Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa – Vũng Tàu được Chính phủ và các Bộ Ngành đầu tư để trở thành trường chất lượng cao và là trường cao đẳng đầu tiên ở Việt Nam  và thương hiệu, là cơ sở giáo dục nghề nghiệp hàng đầu của cả nước, đào tạo và cung ứng nguồn nhân lực chất lượng cao cho Thành phố Hồ Chí Minh và cho khu vực.</p>
+              <div><img src="../IMAGES/Gioi thieu truong.png" alt="" width="500" height="200"></div>
+              <p>Hiện nay, trường có 2 cơ sở tại xã Đất Đỏ và phường Phước Thắng với tổng diện tích 16 ha, tổ chức đào tạo 23 ngành nghề trình độ cao đẳng, 25 nghề trình độ trung cấp và 15 nghề trình độ sơ cấp gồm các lĩnh vực: Điện, Điện tử, Điện lạnh.</p>
+            </div>
+            <!-- TemplateEndEditable --></div>
+         
+           <div id="bottom">by Vũ thị tho thay đổi thêm </div>
+    </div>
+</body>
+</html>

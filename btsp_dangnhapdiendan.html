@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+        src="C:\Users\Administrator\Desktop\Slide TK Web 2024\THIETKEWEBCD24CNTT2\BAIGIANG\JQUERY\jquery-3.7.1.min.js">
+        </script>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .khung {
+            width: 350px;
+            padding: 15px;
+            border: 1px solid #333;
+            margin: 30px auto;
+        }
+
+        .tieude {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 95%;
+            padding: 4px;
+        }
+
+        button {
+            padding: 5px 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="khung">
+        <div class="tieude">ĐĂNG NHẬP DIỄN ĐÀN</div>
+        <from id="frmdangnhap">
+            <table>
+                <tr>
+                    <td>Tên đăng nhập:</td>
+                    <td><input type="text" name="nguoidung" id="nguoidung" nam="nguoidung"></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td><input type="password" id="matkhau" name="matkhau"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <button type="submit" name="dangnhap" id="dangnhap">Đăng nhập</button>
+                        <button>Phục hồi</button>
+                    </td>
+                </tr>
+            </table>
+        </from>
+    </div>
+
+    <script>
+        // Xử lý nút Đăng nhập
+        function dangNhap() {
+            var u = document.getElementById("nguoidung").value.trim();
+            var p = document.getElementById("matkhau").value.trim();
+
+            if (u === "" || p === "") {
+                alert("Các ô nhập không được bỏ trống!");
+                return;
+            }
+
+            if (u === "admin" && p === "123456") {
+                alert("Đăng nhập thành công!");
+            } else {
+                alert("Tên đăng nhập hoặc mật khẩu không đúng!");
+            }
+        }
+
+        // Xử lý nút Phục hồi
+        function phucHoi() {
+            document.getElementById("nguoidung").value = "";
+            document.getElementById("matkhau").value = "";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            // Khai báo validate
+            $("#frmdangnhap").validate({
+
+                rules: {
+                    nguoidung: {
+                        required: true,
+                        lettersonly: true
+                    },
+                    matkhau: {
+                        required: true,
+                        minlength: 6
+                    }
+                },
+
+                messages: {
+                    nguoidung: {
+                        required: alert( "Tên đăng nhập không được bỏ trống"),
+                        lettersonly: "Tên đăng nhập phải là chữ"
+                    },
+                    matkhau: {
+                        required: alert( "MATKHAU không được bỏ trống"),
+                        minlength: "Mật khẩu ít nhất 6 ký tự"
+                    }
+                }
+            });
+
+            // Khi click nút đăng nhập
+            $("#dangnhap").click(function () {
+
+                if ($("#frmdangnhap").valid()) {
+
+                    // Kiểm tra đăng nhập mẫu
+                    if ($("nguoidung").val() === "admin" &&
+                        $("matkhau").val() === "123456") {
+
+                        alert("Đăng nhập thành công!");
+                    } else {
+                        alert("Tên đăng nhập hoặc mật khẩu không đúng!");
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
